@@ -56,7 +56,40 @@ body {
     padding-top: 10px;
     font-size: 25px;
     background: rgb(26, 26, 98);
-    margin: 8px;
+    margin: 8px;@media (max-width: 600px) {
+        .outer-box {
+            width: 95%;
+            margin-top: 10px;
+        }
+    
+        .panel-top {
+            flex-direction: column;
+            padding: 10px 5%;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .score h2 {
+            font-size: 20px;
+        }
+    
+        .score p {
+            font-size: 20px;
+            width: 40px;
+        }
+    
+        .bubble {
+            font-size: 20px;
+            height: 40px;
+            width: 40px;
+        }
+    
+        .bubble:hover {
+            font-size: 20px;
+            height: 40px;
+            width: 40px;
+        }
+    }
     color: white;
     border-radius: 50%;
     height: 50px;
@@ -67,3 +100,4 @@ body {
     color: rgb(117, 117, 235);
     cursor: pointer;
 }
+
